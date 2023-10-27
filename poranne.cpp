@@ -9,7 +9,7 @@ int main()
     cin >> pizzaN;
       if (pizzaN <= 0) {
          cout << "wpisałeś liczbę ujemną";
-    } else if (guestsN >=0) {
+    } else if (pizzaN ==0) {
        cout << "czyżbyś wpisał zero? No, no... Nie ma pizzy!";
     }
 
@@ -17,7 +17,7 @@ int main()
     cin >> guestsN;
     if (guestsN <= 0) {
          cout << "wpisałeś liczbę ujemną";
-    } else if (guestsN =0) {
+    } else if (guestsN ==0) {
          cout << "czyżbyś wpisał zero? Nie ma przyjaciół...";
     }
   
@@ -25,7 +25,8 @@ if (guestsN>pizzaN)
 {
     int brak = guestsN-pizzaN; 
     cout << "nie ma pizzy dla wszystkich gości! zabraknie "<< brak << "kawałków!";
-}
+}else
+{
 
 
   int rest = pizzaN % guestsN;
@@ -34,4 +35,4 @@ if (guestsN>pizzaN)
    cout << "powinno być " << noRestDivide << " kawałków pizzy na każdego gościa";
    if (rest == 0) cout << "pozostaje " << rest << " kawałków pizzy dla gospodarza";
 
-}
+}}
