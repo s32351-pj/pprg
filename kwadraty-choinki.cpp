@@ -56,5 +56,6 @@ cout << "\n";
 }
 cout << "dziena!";
 cout << "\n";
+return 0;
 }
 
